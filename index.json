@@ -1,0 +1,17 @@
+[
+  {
+    "date_created": "2026-04-19T19:14:54+02:00",
+    "title": "Djot",
+    "url": "https://example.com/blog/dist/djot.json"
+  },
+  {
+    "date_created": "2026-04-19T19:07:51+02:00",
+    "title": "Markdown",
+    "url": "https://example.com/blog/dist/markdown.json"
+  },
+  {
+    "date_created": "2026-04-19T19:14:01+02:00",
+    "title": "Restructured text",
+    "url": "https://example.com/blog/dist/restructured-text.json"
+  }
+]
