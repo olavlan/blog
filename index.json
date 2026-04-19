@@ -2,16 +2,16 @@
   {
     "date_created": "2026-04-19T19:14:54+02:00",
     "title": "Djot",
-    "url": "https://raw.githubusercontent.com/olavlan/blog/master/dist/djot.json"
+    "url": "https://raw.githubusercontent.com/olavlan/blog/refs/heads/master/dist/djot.json"
   },
   {
     "date_created": "2026-04-19T22:57:08+02:00",
     "title": "Markdown",
-    "url": "https://raw.githubusercontent.com/olavlan/blog/master/dist/markdown.json"
+    "url": "https://raw.githubusercontent.com/olavlan/blog/refs/heads/master/dist/markdown.json"
   },
   {
     "date_created": "2026-04-19T22:57:33+02:00",
     "title": "Restructured text",
-    "url": "https://raw.githubusercontent.com/olavlan/blog/master/dist/restructured-text.json"
+    "url": "https://raw.githubusercontent.com/olavlan/blog/refs/heads/master/dist/restructured-text.json"
   }
 ]

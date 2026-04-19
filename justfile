@@ -1,4 +1,4 @@
-base_url := "https://raw.githubusercontent.com/olavlan/blog/master"
+base_url := "https://raw.githubusercontent.com/olavlan/blog/refs/heads/master"
 
 # builds dist/ with all posts converted to JSON-serialized pandoc AST, plus an index file
 build:
