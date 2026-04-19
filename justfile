@@ -1,4 +1,4 @@
-base_url := "https://example.com/blog"
+base_url := "https://raw.githubusercontent.com/olavlan/blog/master"
 
 # builds dist/ with all posts converted to JSON-serialized pandoc AST, plus an index file
 build:
@@ -14,6 +14,7 @@ build:
         date_created="$(date -d "$(stat --format='%w' "$file")" +"%Y-%m-%dT%H:%M:%S%:z")"
         json_path="dist/${name}.json"
         pandoc "$file" -t json -o "$json_path"
-        entries+=("$(jq -n --arg dc "$date_created" --arg t "$title" --arg u "{{base_url}}/$json_path" '{date_created: $dc, title: $t, url: $u}')")
+        entries+=("{\"date_created\":\"$date_created\",\"title\":\"$title\",\"url\":\"{{base_url}}/$json_path\"}")
     done
-    printf '%s\n' "${entries[@]}" | jq -s '.' > index.json
+    index="$(IFS=,; echo "[${entries[*]}]")"
+    echo "$index" | jq '.' > index.json
