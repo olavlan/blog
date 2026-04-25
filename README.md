@@ -8,7 +8,7 @@ Blog posts converted to JSON-serialized Pandoc AST, served as static files.
 just build
 ```
 
-This reads every file in `posts/` and writes the corresponding JSON to `dist/`, plus an `index.json` with metadata for all posts.
+This reads every file in `posts/` and writes a `blog.json` with metadata and inline pandoc AST for all posts.
 
 ## Git hook
 
@@ -18,7 +18,7 @@ To ensure built files are always up to date in the repo, add a pre-commit hook:
 cat > .git/hooks/pre-commit << 'EOF'
 #!/bin/sh
 just build
-git add dist/ index.json
+git add blog.json
 EOF
 chmod +x .git/hooks/pre-commit
 ```

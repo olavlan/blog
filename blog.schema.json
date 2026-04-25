@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://raw.githubusercontent.com/olavlan/blog/refs/heads/master/blog.schema.json",
+  "title": "Blog",
+  "type": "object",
+  "properties": {
+    "$schema": {
+      "type": "string",
+      "format": "uri"
+    },
+    "posts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "date_created": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "title": {
+            "type": "string"
+          },
+          "pandoc": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "date_created",
+          "title",
+          "pandoc"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "posts"
+  ],
+  "additionalProperties": false
+}

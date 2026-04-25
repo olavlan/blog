@@ -1,10 +1,8 @@
-base_url := "https://raw.githubusercontent.com/olavlan/blog/refs/heads/master"
-
-# builds dist/ with all posts converted to JSON-serialized pandoc AST, plus an index file
+# builds blog.json with all posts converted to JSON-serialized pandoc AST
 build:
     #!/usr/bin/env bash
     set -euo pipefail
-    mkdir -p dist
+    schema_url="https://raw.githubusercontent.com/olavlan/blog/refs/heads/master/blog.schema.json"
     entries=()
     for file in posts/*; do
         [ -f "$file" ] || continue
@@ -12,9 +10,8 @@ build:
         temp="$(echo "$name" | tr '-' ' ')"
         title="${temp^}"
         date_created="$(date -d "$(stat --format='%w' "$file")" +"%Y-%m-%dT%H:%M:%S%:z")"
-        json_path="dist/${name}.json"
-        pandoc "$file" -t json -o "$json_path"
-        entries+=("{\"date_created\":\"$date_created\",\"title\":\"$title\",\"url\":\"{{base_url}}/$json_path\"}")
+        pandoc_json="$(pandoc "$file" -t json)"
+        entry="$(jq -n --arg date_created "$date_created" --arg title "$title" --argjson pandoc "$pandoc_json" '{date_created: $date_created, title: $title, pandoc: $pandoc}')"
+        entries+=("$entry")
     done
-    index="$(IFS=,; echo "[${entries[*]}]")"
-    echo "$index" | jq '.' > index.json
+    jq -n --arg schema "$schema_url" --argjson posts "$(jq -s '.' <(printf '%s\n' "${entries[@]}"))" '{"$schema": $schema, posts: $posts}' > blog.json
