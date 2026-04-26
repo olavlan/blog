@@ -1,7 +1,7 @@
 {
   "$schema": "https://raw.githubusercontent.com/olavlan/blog/refs/heads/master/blog.schema.json",
-  "posts": [
-    {
+  "posts": {
+    "2026-04-25-djot": {
       "date_created": "2026-04-25T19:30:53+02:00",
       "title": "Djot",
       "pandoc": {
@@ -91,7 +91,7 @@
         ]
       }
     },
-    {
+    "2026-04-25-markdown": {
       "date_created": "2026-04-25T19:30:53+02:00",
       "title": "Markdown",
       "pandoc": {
@@ -265,7 +265,7 @@
         ]
       }
     },
-    {
+    "2026-04-25-restructured-text": {
       "date_created": "2026-04-25T19:30:53+02:00",
       "title": "Restructured text",
       "pandoc": {
@@ -310,5 +310,5 @@
         ]
       }
     }
-  ]
+  }
 }

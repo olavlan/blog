@@ -9,28 +9,31 @@
       "format": "uri"
     },
     "posts": {
-      "type": "array",
-      "items": {
-        "type": "object",
-        "properties": {
-          "date_created": {
-            "type": "string",
-            "format": "date-time"
+      "type": "object",
+      "patternProperties": {
+        "^\\d{4}-\\d{2}-\\d{2}-": {
+          "type": "object",
+          "properties": {
+            "date_created": {
+              "type": "string",
+              "format": "date-time"
+            },
+            "title": {
+              "type": "string"
+            },
+            "pandoc": {
+              "type": "object"
+            }
           },
-          "title": {
-            "type": "string"
-          },
-          "pandoc": {
-            "type": "object"
-          }
-        },
-        "required": [
-          "date_created",
-          "title",
-          "pandoc"
-        ],
-        "additionalProperties": false
-      }
+          "required": [
+            "date_created",
+            "title",
+            "pandoc"
+          ],
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
     }
   },
   "required": [
