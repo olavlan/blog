@@ -15,3 +15,5 @@ These are bullet points:
 
 Some text.
 :::
+
+This [word]{definition="the definition of the word"} has a definition.
