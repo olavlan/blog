@@ -9,9 +9,9 @@ These are bullet points:
 
 <https://discord.com/channels/768594524158427167/768594524158427170>
 
-::: {}
+::: {.collapse}
 
-# Title
+## Title
 
 Some text.
 :::
