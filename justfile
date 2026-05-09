@@ -1,3 +1,11 @@
+# list all available commands
+default:
+    @just --list
+
+# convert markdown file to pretty-printed pandoc JSON AST
+to-pandoc file:
+    pandoc "{{file}}" -t json | jq '.'
+
 # builds blog.json with all posts converted to JSON-serialized pandoc AST
 build:
     #!/bin/env bash
