@@ -1,99 +1,9 @@
 {
   "$schema": "https://raw.githubusercontent.com/olavlan/blog/refs/heads/master/blog.schema.json",
   "posts": {
-    "2026-04-25-djot": {
-      "date_created": "2026-04-25T19:30:53+02:00",
-      "title": "Djot",
-      "pandoc": {
-        "pandoc-api-version": [
-          1,
-          23,
-          1,
-          1
-        ],
-        "meta": {},
-        "blocks": [
-          {
-            "t": "Div",
-            "c": [
-              [
-                "section-1",
-                [
-                  "section"
-                ],
-                []
-              ],
-              [
-                {
-                  "t": "Header",
-                  "c": [
-                    1,
-                    [
-                      "",
-                      [],
-                      []
-                    ],
-                    [
-                      {
-                        "t": "Str",
-                        "c": "Djot"
-                      },
-                      {
-                        "t": "Space"
-                      },
-                      {
-                        "t": "Str",
-                        "c": "test"
-                      },
-                      {
-                        "t": "Space"
-                      },
-                      {
-                        "t": "Str",
-                        "c": "file"
-                      }
-                    ]
-                  ]
-                },
-                {
-                  "t": "Para",
-                  "c": [
-                    {
-                      "t": "Str",
-                      "c": "This"
-                    },
-                    {
-                      "t": "Space"
-                    },
-                    {
-                      "t": "Str",
-                      "c": "is"
-                    },
-                    {
-                      "t": "Space"
-                    },
-                    {
-                      "t": "Str",
-                      "c": "a"
-                    },
-                    {
-                      "t": "Space"
-                    },
-                    {
-                      "t": "Str",
-                      "c": "paragraph."
-                    }
-                  ]
-                }
-              ]
-            ]
-          }
-        ]
-      }
-    },
-    "2026-05-09-markdown": {
-      "date_created": "2026-05-09T12:38:48+02:00",
-      "title": "Markdown",
+    "2026-06-08-use": {
+      "date_created": "2026-06-08T21:54:15+02:00",
+      "title": "Use",
       "pandoc": {
         "pandoc-api-version": [
           1,
@@ -108,158 +18,37 @@
             "c": [
               1,
               [
-                "markdown-test-file",
+                "what-i-use-2026",
                 [],
                 []
               ],
               [
                 {
                   "t": "Str",
-                  "c": "Markdown"
+                  "c": "What"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "test"
+                  "c": "I"
                 },
                 {
                   "t": "Space"
                 },
                 {
                   "t": "Str",
-                  "c": "file"
+                  "c": "use"
+                },
+                {
+                  "t": "Space"
+                },
+                {
+                  "t": "Str",
+                  "c": "(2026)"
                 }
               ]
-            ]
-          },
-          {
-            "t": "Para",
-            "c": [
-              {
-                "t": "Str",
-                "c": "This"
-              },
-              {
-                "t": "Space"
-              },
-              {
-                "t": "Str",
-                "c": "is"
-              },
-              {
-                "t": "Space"
-              },
-              {
-                "t": "Str",
-                "c": "a"
-              },
-              {
-                "t": "Space"
-              },
-              {
-                "t": "Str",
-                "c": "paragraph."
-              }
-            ]
-          },
-          {
-            "t": "Para",
-            "c": [
-              {
-                "t": "Str",
-                "c": "These"
-              },
-              {
-                "t": "Space"
-              },
-              {
-                "t": "Str",
-                "c": "are"
-              },
-              {
-                "t": "Space"
-              },
-              {
-                "t": "Str",
-                "c": "bullet"
-              },
-              {
-                "t": "Space"
-              },
-              {
-                "t": "Str",
-                "c": "points:"
-              }
-            ]
-          },
-          {
-            "t": "BulletList",
-            "c": [
-              [
-                {
-                  "t": "Plain",
-                  "c": [
-                    {
-                      "t": "Str",
-                      "c": "Item"
-                    },
-                    {
-                      "t": "Space"
-                    },
-                    {
-                      "t": "Str",
-                      "c": "1"
-                    }
-                  ]
-                }
-              ],
-              [
-                {
-                  "t": "Plain",
-                  "c": [
-                    {
-                      "t": "Str",
-                      "c": "Item"
-                    },
-                    {
-                      "t": "Space"
-                    },
-                    {
-                      "t": "Str",
-                      "c": "2"
-                    }
-                  ]
-                }
-              ]
-            ]
-          },
-          {
-            "t": "Para",
-            "c": [
-              {
-                "t": "Link",
-                "c": [
-                  [
-                    "",
-                    [
-                      "uri"
-                    ],
-                    []
-                  ],
-                  [
-                    {
-                      "t": "Str",
-                      "c": "https://discord.com/channels/768594524158427167/768594524158427170"
-                    }
-                  ],
-                  [
-                    "https://discord.com/channels/768594524158427167/768594524158427170",
-                    ""
-                  ]
-                ]
-              }
             ]
           },
           {
@@ -268,7 +57,7 @@
               [
                 "",
                 [
-                  "collapse"
+                  "details"
                 ],
                 []
               ],
@@ -278,14 +67,166 @@
                   "c": [
                     2,
                     [
-                      "title",
+                      "ghostty",
                       [],
                       []
                     ],
                     [
                       {
                         "t": "Str",
-                        "c": "Title"
+                        "c": "ghostty"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "t": "Div",
+            "c": [
+              [
+                "",
+                [
+                  "details"
+                ],
+                []
+              ],
+              [
+                {
+                  "t": "Header",
+                  "c": [
+                    2,
+                    [
+                      "maple-mono-nf",
+                      [],
+                      []
+                    ],
+                    [
+                      {
+                        "t": "Str",
+                        "c": "Maple"
+                      },
+                      {
+                        "t": "Space"
+                      },
+                      {
+                        "t": "Str",
+                        "c": "Mono"
+                      },
+                      {
+                        "t": "Space"
+                      },
+                      {
+                        "t": "Str",
+                        "c": "NF"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "t": "Div",
+            "c": [
+              [
+                "",
+                [
+                  "details"
+                ],
+                []
+              ],
+              [
+                {
+                  "t": "Header",
+                  "c": [
+                    2,
+                    [
+                      "fish",
+                      [],
+                      []
+                    ],
+                    [
+                      {
+                        "t": "Str",
+                        "c": "fish"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "t": "Div",
+            "c": [
+              [
+                "",
+                [
+                  "details"
+                ],
+                []
+              ],
+              [
+                {
+                  "t": "Header",
+                  "c": [
+                    2,
+                    [
+                      "homebrew",
+                      [],
+                      []
+                    ],
+                    [
+                      {
+                        "t": "Str",
+                        "c": "Homebrew"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "t": "Div",
+            "c": [
+              [
+                "",
+                [
+                  "details"
+                ],
+                []
+              ],
+              [
+                {
+                  "t": "Header",
+                  "c": [
+                    2,
+                    [
+                      "neovim-lazyvim",
+                      [],
+                      []
+                    ],
+                    [
+                      {
+                        "t": "Str",
+                        "c": "neovim"
+                      },
+                      {
+                        "t": "Space"
+                      },
+                      {
+                        "t": "Str",
+                        "c": "/"
+                      },
+                      {
+                        "t": "Space"
+                      },
+                      {
+                        "t": "Str",
+                        "c": "LazyVim"
                       }
                     ]
                   ]
@@ -295,14 +236,28 @@
                   "c": [
                     {
                       "t": "Str",
-                      "c": "Some"
+                      "c": "fzf"
                     },
                     {
-                      "t": "Space"
+                      "t": "SoftBreak"
                     },
                     {
                       "t": "Str",
-                      "c": "text."
+                      "c": "ripgrep"
+                    },
+                    {
+                      "t": "SoftBreak"
+                    },
+                    {
+                      "t": "Str",
+                      "c": "snacks.nvim"
+                    },
+                    {
+                      "t": "SoftBreak"
+                    },
+                    {
+                      "t": "Str",
+                      "c": "tomorrow-night-blue"
                     }
                   ]
                 }
@@ -310,102 +265,195 @@
             ]
           },
           {
-            "t": "Para",
+            "t": "Div",
             "c": [
-              {
-                "t": "Str",
-                "c": "This"
-              },
-              {
-                "t": "Space"
-              },
-              {
-                "t": "Span",
-                "c": [
-                  [
-                    "",
-                    [],
+              [
+                "",
+                [
+                  "details"
+                ],
+                []
+              ],
+              [
+                {
+                  "t": "Header",
+                  "c": [
+                    2,
                     [
-                      [
-                        "definition",
-                        "the definition of the word"
-                      ]
+                      "ghgleam-langgleam",
+                      [],
+                      []
+                    ],
+                    [
+                      {
+                        "t": "Str",
+                        "c": "gh:gleam-lang/gleam"
+                      }
                     ]
-                  ],
-                  [
+                  ]
+                },
+                {
+                  "t": "Para",
+                  "c": [
                     {
                       "t": "Str",
-                      "c": "word"
+                      "c": "gh:lustre-labs/lustre"
                     }
                   ]
-                ]
-              },
-              {
-                "t": "Space"
-              },
-              {
-                "t": "Str",
-                "c": "has"
-              },
-              {
-                "t": "Space"
-              },
-              {
-                "t": "Str",
-                "c": "a"
-              },
-              {
-                "t": "Space"
-              },
-              {
-                "t": "Str",
-                "c": "definition."
-              }
+                }
+              ]
             ]
-          }
-        ]
-      }
-    },
-    "2026-04-25-restructured-text": {
-      "date_created": "2026-04-25T19:30:53+02:00",
-      "title": "Restructured text",
-      "pandoc": {
-        "pandoc-api-version": [
-          1,
-          23,
-          1,
-          1
-        ],
-        "meta": {},
-        "blocks": [
+          },
           {
-            "t": "Para",
+            "t": "Div",
             "c": [
-              {
-                "t": "Str",
-                "c": "This"
-              },
-              {
-                "t": "Space"
-              },
-              {
-                "t": "Str",
-                "c": "is"
-              },
-              {
-                "t": "Space"
-              },
-              {
-                "t": "Str",
-                "c": "a"
-              },
-              {
-                "t": "Space"
-              },
-              {
-                "t": "Str",
-                "c": "paragraph."
-              }
+              [
+                "",
+                [
+                  "details"
+                ],
+                []
+              ],
+              [
+                {
+                  "t": "Header",
+                  "c": [
+                    2,
+                    [
+                      "lean",
+                      [],
+                      []
+                    ],
+                    [
+                      {
+                        "t": "Str",
+                        "c": "lean"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "t": "Div",
+            "c": [
+              [
+                "",
+                [
+                  "details"
+                ],
+                []
+              ],
+              [
+                {
+                  "t": "Header",
+                  "c": [
+                    2,
+                    [
+                      "zoxide",
+                      [],
+                      []
+                    ],
+                    [
+                      {
+                        "t": "Str",
+                        "c": "zoxide"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "t": "Div",
+            "c": [
+              [
+                "",
+                [
+                  "details"
+                ],
+                []
+              ],
+              [
+                {
+                  "t": "Header",
+                  "c": [
+                    2,
+                    [
+                      "git-gh-difftastic",
+                      [],
+                      []
+                    ],
+                    [
+                      {
+                        "t": "Str",
+                        "c": "git"
+                      },
+                      {
+                        "t": "Space"
+                      },
+                      {
+                        "t": "Str",
+                        "c": "/"
+                      },
+                      {
+                        "t": "Space"
+                      },
+                      {
+                        "t": "Str",
+                        "c": "gh"
+                      },
+                      {
+                        "t": "Space"
+                      },
+                      {
+                        "t": "Str",
+                        "c": "/"
+                      },
+                      {
+                        "t": "Space"
+                      },
+                      {
+                        "t": "Str",
+                        "c": "difftastic"
+                      }
+                    ]
+                  ]
+                }
+              ]
+            ]
+          },
+          {
+            "t": "Div",
+            "c": [
+              [
+                "",
+                [
+                  "details"
+                ],
+                []
+              ],
+              [
+                {
+                  "t": "Header",
+                  "c": [
+                    2,
+                    [
+                      "just",
+                      [],
+                      []
+                    ],
+                    [
+                      {
+                        "t": "Str",
+                        "c": "just"
+                      }
+                    ]
+                  ]
+                }
+              ]
             ]
           }
         ]
