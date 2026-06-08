@@ -2,6 +2,18 @@
 
 :::details
 
+## ubuntu
+
+:::
+
+:::details
+
+## firefox
+
+:::
+
+:::details
+
 ## ghostty
 
 :::
@@ -63,5 +75,11 @@ gh:lustre-labs/lustre
 :::details
 
 ## just
+
+:::
+
+:::details
+
+## pandoc
 
 :::
