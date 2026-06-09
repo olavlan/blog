@@ -1,0 +1,150 @@
+# What I use (2026)
+
+I value technology with a minimal, well-thought user interface that you can quickly become productive with.
+Configuration should be easy and non-hacky. 
+
+:::
+
+## Linux
+
+I don't find the choice of Linux distribution very important.
+Since I only use the terminal and browser, my workflow would be the same on any well-established distribution.
+I have used Ubuntu for a long time and don't see any reason to change.
+The only reason would probably be to try NixOS, but for now I have decided not to go down that rabbit hole.
+
+
+:::
+
+:::
+
+## Firefox
+
+The browser is important, since it's the only application I use except for the terminal.
+I've been using Firefox mainly for availablity of extensions.
+I mostly need gh:philc/vimium and gh:opentyles/stylus to get a comfortable setup.
+I love the styles from gh:catppuccin/userstyles that has ports to a lot of websites,
+but I also have a generic one, as well as a couple of custom rules for fonts.
+
+I would be interested in trying a more lightweight browser if I can have the same setup.
+
+:::
+
+:::
+
+## gh:ghostty-org/ghostty
+
+After trying different terminal emulators, ghostty was the one that felt the most native and simplest to configure.
+
+:::
+
+:::
+
+## subframe7536/Maple-font
+
+I really value pretty code, so the font is important to me.
+I have tried different fonts and really fell in love with this one.
+Using the bold variant as default together with a light pastel theme (like gh:catppuccin/catppuccin)
+gives the code the attention and aesthetics I want.
+
+:::
+
+:::
+
+## fish
+
+The choice of shell doesn't seem very important to me,
+since most of my terminal workflow is based on CLI tools with shell integrations.
+Fish just seems like the most modern choice these days,
+and it has good enough autocompletion out of the box that I don't need a tool for that.
+I also prefer fish's configuration over the other shells, although I still think it could be simpler.
+
+:::
+
+:::
+
+## Homebrew
+
+Homebrew is basically what stops me from going down the Nix rabbit-hole.
+Everything is available and always up-to-date, and
+the ease of use is unmatched.
+As a Homebrew user I think I could also be fine on MacOS (but I still prefer Linux).
+
+:::
+
+:::
+
+## neovim / LazyVim
+
+When choosing an editor, the main contraints are:
+
+* It must be a terminal editor. 
+  
+  While I find gh:zed-industries/zed super attractive for its code collaboration features,
+  I do not want another GUI application.
+  I want to do all my work in the same environment as I run commands.
+  I don't want any distracting menus.
+
+* It must be easily and fully customizable.
+  
+  While I don't need an extreme level of cutomization with other tools,
+  I really do with the editor.
+  Static configuration files quickly become insufficient here,
+  and I want a big ecosystem of plugins to choose from.
+  That's why I couldn't use gh:helix-editor/helix,
+  although I really like it for its simplicity and selection-first modal editing.
+
+I didn't really like the idea of LazyVim because I prefer minimalism and adding the few features I need.
+But building a decent configuration from nothing was a really overwhelming task,
+one which I gave up on it several times,
+and eventually it was LazyVim that made the witch to neovim possible.
+
+Every now and then I dedicate some time to trying out some adjustments to the configuration,
+whether it's a new keybinding or trying a new plugin.
+I can alway get exactly what I want, because configuraation is such a core part of neovim.
+But it's not something I'm forced to do in order to be productive or comfortable in the environment,
+and I really appreciate LazyVim for that.
+:::
+
+:::
+
+## gh:gleam-lang/gleam
+
+gh:lustre-labs/lustre
+
+:::
+
+:::
+
+## git / gh / difftastic
+
+:::
+
+:::
+
+## opencode
+
+:::
+
+:::
+
+## just
+
+:::
+
+:::
+
+## zoxide
+
+:::
+
+:::
+
+## lean
+
+:::
+
+:::
+
+## pandoc
+
+:::

@@ -24,3 +24,4 @@ chmod +x .git/hooks/pre-commit
 ```
 
 This runs `just build` and stages the output before every commit. The commit is aborted if the build fails.
+
