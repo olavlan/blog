@@ -22,8 +22,10 @@ The only reason would probably be to try NixOS, but for now I have decided not t
 The browser is important, since it's the only application I use except for the terminal.
 I've been using Firefox mainly for availablity of extensions.
 I mostly need gh:philc/vimium and gh:opentyles/stylus to get a comfortable setup.
+I need to turn on gh:darkreader/darkreader on some websites, but I'd like to stop using it,
+since it seems to slow down the browser.
 I love the styles from gh:catppuccin/userstyles that has ports to a lot of websites,
-but I also have a generic one, as well as a couple of custom rules for fonts.
+and I also have a generic one, as well as a couple of custom rules for fonts.
 
 I would be interested in trying a more lightweight browser if I can have the same setup.
 
@@ -43,7 +45,7 @@ After trying different terminal emulators, ghostty was the one that felt the mos
 
 I really value pretty code, so the font is important to me.
 I have tried different fonts and really fell in love with this one.
-Using the bold variant as default together with a light pastel theme (like gh:catppuccin/catppuccin)
+Using the bold variant together with a light pastel theme (like gh:catppuccin/catppuccin)
 gives the code the attention and aesthetics I want.
 
 :::
@@ -79,8 +81,8 @@ When choosing an editor, the main contraints are:
 
 * It must be a terminal editor. 
   
-  While I find gh:zed-industries/zed super attractive for its code collaboration features,
-  I do not want another GUI application.
+  While I find gh:zed-industries/zed extremely attractive for its code collaboration features,
+  I don't want another GUI application.
   I want to do all my work in the same environment as I run commands.
   I don't want any distracting menus.
 
@@ -89,7 +91,7 @@ When choosing an editor, the main contraints are:
   While I don't need an extreme level of cutomization with other tools,
   I really do with the editor.
   Static configuration files quickly become insufficient here,
-  and I want a big ecosystem of plugins to choose from.
+  and I want a big ecosystem of plugins and documentation.
   That's why I couldn't use gh:helix-editor/helix,
   although I really like it for its simplicity and selection-first modal editing.
 
@@ -109,19 +111,71 @@ and I really appreciate LazyVim for that.
 
 ## gh:gleam-lang/gleam
 
-gh:lustre-labs/lustre
+Gleam has by far become my favourite language.
+It ha been by introduction to functional programming,
+and functional programming has made me excited about programming again.
+
+I wouldn't be able to write just a paragraph about Gleam,
+so that will hopefully come in blog posts instead.
+
+I'm also very excited about gh:lustre-labs/lustre,
+which is an implementation of the Elm architecture in Gleam.
+
+There are only a couple of things I'm motivated to learn about that Gleam doesn't give me;
+managed effects and dependent types.
+That doesn't mean I would like Gleam to have them though, as one of my main attractions to Gleam is how minimal it is.
 
 :::
 
-:::
-
-## git / gh / difftastic
-
-:::
 
 :::
 
 ## opencode
+
+Coding agents is not a topic I'm inspired to write blog posts about, so I will write once about it here.
+
+One of my favorite things about LLM's is that I can stay in my terminal for things I would usually go to the browser for,
+like quickly figuring out how to do something in the terminal, or researching a topic.
+
+When working in a fun language like Gleam I usually find it stimulating to write out the code by hand,
+but when I ocasionally find that too boring and want to move on to the next thing,
+I like to delegate it to the agent.
+For me there is no difference between the code I write by hand and the code I have descibed in natural language;
+they both feel jut a much like my own code.
+
+One thing I really like the coding agent for is configuration, especially of neovim, but also other tools.
+I only find joy in the result (an environment that feels right),
+but the process of configuring it myself would just cause me a lot of frustration and time (I'm both impatient and stubborn).
+The fact that I can just describe exactly what I want and get it in less than a minute is really valuable to me.
+
+Occasionally I also use it as a sparring partner.
+I like to learn by asking and being asked questions, and I view the agent as a very cheap personal teacher.
+But once I have got over the initial hurdle of learning something new,
+I value finding high-quality human-made resources to solidify my knowledge. 
+
+To conclude, it's fair to say that the coding agent has become an integrated part of my workflow.
+I don't think the result in any way; I would still make the same things in more or less the same time,
+but it makes the way there more fun and ergonomic; and it helps me pass some initial hurdles
+that I otherwise wouldn't have had the patience for.
+
+I tried a few different coding agents and `opencode` is by far my favourite.
+As far as I know it's the only coding agent with built in LSP support, which I think is a really good idea,
+although it seems to not support coding actions, which I think would be very useful.
+The configuration is both the simplest and most extensive.
+The interface is nice and responsive, except the diffs which I wish were configurable, so I could ue something like difftastic.
+And importantly, I never need any of the big, high-reasoning models; so I like that they focus on supporting small, efficient and open-source models.
+It would be nice to run them locally one day.
+
+:::
+
+## difftastic
+
+A good diff tool is an important part of my workflow,
+since it allows me to review my changes and verify that I have done what I wanted.
+Since difftastic is based on structural diffs,
+it doesn't care if the file has been reformatted during the edit,
+which I think is very useful.
+It produces really pretty and clean diffs.
 
 :::
 
@@ -129,11 +183,31 @@ gh:lustre-labs/lustre
 
 ## just
 
+The idea of having a simple set of commands across all projects is really appealing to me.
+The commands might trigger different things depending on the technology used in the project,
+but only needing to remember a few simple commands like `just check` and `just test`
+really simplifies my workflow. 
+That said, some technologies, like the Gleam programming language,
+has such a nice CLI tool that I end up using it directly anyway.
+But even then `just` can be useful if I'm working in a monorepo, for instance,
+and I want to run commands across all the submodules.
+Whenever I need to automate something in my workflow,
+I know I can turn to `just`.
+It's exactly as simple as a command runner should be.
+
 :::
 
 :::
 
 ## zoxide
+
+I like zoxide  not only because it allows me `cd` into the folder i want in 3-4 keytrokes instead of 10-20,
+but because I also need to think less.
+I never spend time thinking about where in my file system I am anymore,
+I just get to the folder I want by writing the first characters of its name. 
+Since there is a very limited set of folders I need to go to regularly, this becomes very automatic.
+
+zoxide makes it pleasant to stay in the terminal, and makes me never want to open a file explorer again.
 
 :::
 
@@ -141,10 +215,27 @@ gh:lustre-labs/lustre
 
 ## lean
 
+I have only just started learning Lean, and I'm really fascinated by it, mostly because of its dependent type system.
+The barrier of getting into it still feels high at the moment,
+but I'm very motivated to learn how problems can be modeled with dependent types.
+The editor support you can get also seems really cool.
+
 :::
 
 :::
 
 ## pandoc
+
+I really like the idea of a universal, format-independent AST for documents.
+I think `pandoc` has proven the usefulness of this idea by being able to convert between literally any document formats,
+in mot cases little with little to no loss of information, showing that Markdown and other formats are essentially
+just different syntaxes for the same thing.
+Yes, different flavors of Markdown offer syntaxes for very specific things, but I'm not a fan of that;
+I don't want to depend on one opinionated technology for my writing.
+I can express everything I want using the core syntax of any format (personally I like gh:jgm/djot),
+and if I want to render some things in a special way I don't want that to be achieved through a specific syntax
+(that might be outdated in some years),
+but rather through a rule for how to render the AST (which will be stable).
+That's what I try to achieve with gh:olavlan/pandi.
 
 :::
