@@ -12,6 +12,8 @@ This reads every file in `posts/` and writes a `blog.json` with metadata and inl
 
 ## Git hook
 
+Add this to justfile:
+
 To ensure built files are always up to date in the repo, add a pre-commit hook:
 
 ```sh
@@ -24,4 +26,3 @@ chmod +x .git/hooks/pre-commit
 ```
 
 This runs `just build` and stages the output before every commit. The commit is aborted if the build fails.
-
