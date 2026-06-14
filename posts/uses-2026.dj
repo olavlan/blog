@@ -3,7 +3,7 @@
 I value technology with a minimal, well-thought user interface that you can quickly become productive with.
 Configuration should be easy and non-hacky. 
 
-:::
+:::details
 
 ## Linux
 
@@ -15,7 +15,7 @@ The only reason would probably be to try NixOS, but for now I have decided not t
 
 :::
 
-:::
+:::details
 
 ## Firefox
 
@@ -31,7 +31,7 @@ I would be interested in trying a more lightweight browser if I can have the sam
 
 :::
 
-:::
+:::details
 
 ## gh:ghostty-org/ghostty
 
@@ -39,18 +39,18 @@ After trying different terminal emulators, ghostty was the one that felt the mos
 
 :::
 
-:::
+:::details
 
-## subframe7536/Maple-font
+## gh:subframe7536/Maple-font
 
 I really value pretty code, so the font is important to me.
 I have tried different fonts and really fell in love with this one.
-Using the bold variant together with a light pastel theme (like gh:catppuccin/catppuccin)
+Using the bold variant together with a light pastel theme (like [gh:catppuccin/catppuccin]{})
 gives the code the attention and aesthetics I want.
 
 :::
 
-:::
+:::details
 
 ## fish
 
@@ -62,7 +62,7 @@ I also prefer fish's configuration over the other shells, although I still think
 
 :::
 
-:::
+:::details
 
 ## Homebrew
 
@@ -73,7 +73,7 @@ As a Homebrew user I think I could also be fine on MacOS (but I still prefer Lin
 
 :::
 
-:::
+:::details
 
 ## neovim / LazyVim
 
@@ -107,7 +107,7 @@ But it's not something I'm forced to do in order to be productive or comfortable
 and I really appreciate LazyVim for that.
 :::
 
-:::
+:::details
 
 ## gh:gleam-lang/gleam
 
@@ -128,7 +128,7 @@ That doesn't mean I would like Gleam to have them though, as one of my main attr
 :::
 
 
-:::
+:::details
 
 ## opencode
 
@@ -168,6 +168,8 @@ It would be nice to run them locally one day.
 
 :::
 
+:::details
+
 ## difftastic
 
 A good diff tool is an important part of my workflow,
@@ -179,7 +181,7 @@ It produces really pretty and clean diffs.
 
 :::
 
-:::
+:::details
 
 ## just
 
@@ -197,7 +199,7 @@ It's exactly as simple as a command runner should be.
 
 :::
 
-:::
+:::details
 
 ## zoxide
 
@@ -211,7 +213,7 @@ zoxide makes it pleasant to stay in the terminal, and makes me never want to ope
 
 :::
 
-:::
+:::details
 
 ## lean
 
@@ -222,7 +224,7 @@ The editor support you can get also seems really cool.
 
 :::
 
-:::
+:::details
 
 ## pandoc
 
