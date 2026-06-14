@@ -11,7 +11,7 @@ build:
         date="$(date -r "$file" +"%Y-%m-%d")"
         pandoc_json="$(pandoc "$file" -t json)" || continue
         echo "$pandoc_json" | jq --arg name "$name" --arg date "$date" '{($name): {date_created: $date, pandoc: .}}'
-    done | jq -s 'add' > posts.json
+    done | jq -sc 'add' > posts.json
 
 
 install-hook:
